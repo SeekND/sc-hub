@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC Hub — Star Citizen Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">⬡</span>
+      <div>
+        <h1>SC Hub</h1>
+        <p class="tagline">A suite of Star Citizen reference tools</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards">
+      <a class="card" href="https://seeknd.github.io/Forge/" data-tool="forge">
+        <div class="card-icon">⬡</div>
+        <h2>Forge</h2>
+        <p class="card-tagline">Crafting Calculator</p>
+        <p class="card-desc">Browse blueprints, plan armor and weapon sets, manage work orders, and share builds with your org.</p>
+        <span class="card-go">Open →</span>
+      </a>
+
+      <a class="card" href="https://seeknd.github.io/Strata/" data-tool="strata">
+        <div class="card-icon">⛏</div>
+        <h2>Strata</h2>
+        <p class="card-tagline">Mining Operations</p>
+        <p class="card-desc">Find ore locations, compare refinery yields, decode signal spectra, and plan routes across the system.</p>
+        <span class="card-go">Open →</span>
+      </a>
+
+      <a class="card" href="https://seeknd.github.io/Hardpoint/" data-tool="hardpoint">
+        <div class="card-icon">◎</div>
+        <h2>Hardpoint</h2>
+        <p class="card-tagline">Ship Loadout Analyser</p>
+        <p class="card-desc">Per-slot best-weapon picker with effective-DPS-at-range and TTK analysis. Compare two ships side by side.</p>
+        <span class="card-go">Open →</span>
+      </a>
+
+      <a class="card" href="https://seeknd.github.io/Wikelo/" data-tool="wikelo">
+        <div class="card-icon">◈</div>
+        <h2>Wikelo</h2>
+        <p class="card-tagline">Banu Trade Reference</p>
+        <p class="card-desc">Wikelo's Emporium recipes, rewards, reputation tracks, and currency exchanges.</p>
+        <span class="card-go">Open →</span>
+      </a>
+    </section>
+
+    <section class="about">
+      <h3>About</h3>
+      <p>These tools are built from data mined directly from the Star Citizen game files via the <a href="https://github.com/SeekND" target="_blank" rel="noopener">SC Hub pipeline</a>. They update with each patch.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>SC Hub · <a href="https://github.com/SeekND" target="_blank" rel="noopener">GitHub</a></span>
+    <span class="patch" id="patch"></span>
+  </footer>
+</body>
+</html>
