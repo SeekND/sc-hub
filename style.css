@@ -15,6 +15,7 @@
   --strata:    #E8751A;
   --hardpoint: #ef4444;
   --wikelo:    #ffc844;
+  --roulette:  #a78bfa;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -75,15 +76,19 @@ main {
   padding: 48px 32px 32px;
 }
 
-/* Cards: 4-up at desktop, 2-up at tablet, 1-up at mobile. */
+/* Cards: 5-up at desktop, 3-up at wide-tablet, 2-up at tablet, 1-up at mobile. */
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
   margin-bottom: 48px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -118,6 +123,7 @@ main {
 .card-strata    { --card-accent: var(--strata); }
 .card-hardpoint { --card-accent: var(--hardpoint); }
 .card-wikelo    { --card-accent: var(--wikelo); }
+.card-roulette  { --card-accent: var(--roulette); }
 
 .card-icon {
   font-size: 30px;
